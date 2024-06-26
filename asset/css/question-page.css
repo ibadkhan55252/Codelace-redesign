@@ -1,0 +1,181 @@
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      max-width: 1140px;
+    }
+  }
+/* reply section start */
+.reply-section .row,
+.answer-section .row {
+  display: grid;
+  grid-template-columns: 1fr max(650px) 1fr;
+}
+
+.reply-section .menu-list li {
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.reply-section .menu-list li:hover {
+    background-color: #bdbdbd21;
+}
+
+.reply-section .code-box {
+  padding: 12px 8px 12px 12px;
+  background-color: #f7f7f7;
+  max-height: 500px;
+}
+
+.reply-section .code-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.code-box::-webkit-scrollbar-thumb {
+  background: #828282;
+  border-radius: 10px;
+}
+
+
+/* react btn  */
+.react-btn {
+  padding: 4px 24px 4px 10px;
+  background-color: #efefef;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#react-btn::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  width: 126px;
+  height: 44px;
+  cursor: pointer;
+}
+
+#react-btn::before:hover .react-box {
+  width: 100%;
+}
+
+.react-btn .react-imgs {
+  background: linear-gradient(90deg, rgba(239, 239, 239, 0) 0%, #efefef 100%);
+  left: 56px;
+  border-radius: 100px;
+}
+
+.react-box {
+  bottom: 50px;
+  width: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.react-box .react-wrapper {
+  border-radius: 50%;
+  padding: 2px;
+  background-color: transparent;
+  transition: all 0.1s ease;
+}
+
+.react-box .react-wrapper img {
+  transition: all 0.1s ease;
+}
+
+.react-box .react-wrapper:hover {
+  background-color: #bdbdbd;
+}
+
+.react-box .react-wrapper:hover img {
+  scale: 1.1;
+}
+/* react btn end */
+
+.reply-section .card .card-footer {
+  background-color: #0066ff14;
+  border-radius: 6px;
+}
+
+.reply-section .card .icon-wrapper {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgba(175, 4, 255, 0.2) 0%, rgba(255, 88, 248, 0.2) 48%, rgba(219, 0, 255, 0.2) 97.5%);
+}
+
+/*follow card start  */
+.follow-card .img-wrapper {
+  width: 32px;
+  height: 32px;
+}
+/* follow card end */
+
+/* developers card start*/
+.developers-card{
+  margin-top: 14px;
+}
+
+.developers-card .img-wrapper {
+  width: 32px;
+  height: 32px;
+}
+/* developers card end */
+
+/* add comment */
+.comment-box {
+  height: 0;
+  overflow-y: hidden;
+  transition: all 0.2s ease;
+}
+
+.show-comment {
+  overflow-y: visible !important;
+}
+
+/* modal */
+#laceModal {
+  .modal-header {
+    border-bottom: 0;
+  }
+  .modal-header,
+  .modal-body {
+    padding: 16px;
+  }
+
+.modal-content {
+  max-width: 210px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+}
+/* reply section end */
+
+
+
+
+
+/* answer-section start */
+.answer-section input {
+  padding-left: 38px !important;
+}
+
+.answer-section .envlope-icon {
+  left: 14px !important;
+}
+
+.answer-section textarea {
+  max-height: 170px;
+  min-height: 170px;
+}
+
+.answer-section textarea {
+  padding: 10px 14px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  resize: none;
+}

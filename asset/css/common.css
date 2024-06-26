@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-control {
+  font-size: 14px;
+  line-height: 17px;
+  color: #101828 !important;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  transition: all 0.1s ease;
+}
+
+input::placeholder {
+  color: #828282 !important;
+}
+
+input:disabled {
+  color: #667085;
+  border: 1px solid #d0d5dd;
+  background-color: #f9fafb;
+}
+
+body {
+  color: #333333;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 52px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.fs-10{
+  font-size: 10px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.px-16 {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.py-42 {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.btn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #0066ff !important;
+  transition: all 0.25s ease;
+}
+
+.btn.sm-btn {
+  font-size: 13px;
+  line-height: 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.copy-btn {
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 4px;
+  color: #0066ff !important;
+  border: 1px solid #0066ff;
+  box-shadow: 0px 0px 4px 2px #0066ff52 inset;
+  box-shadow: 0px 2px 6px 0px #0066ff3d;
+}
+
+.btn.btn-primary {
+  color: #ffffff !important;
+  background: linear-gradient(
+    90.19deg,
+    hsl(234, 100%, 49%) 0.18%,
+    #00b3ff 99.85%
+  ) !important;
+  box-shadow: inset 0px 0px 4px 2px #ffffffcc !important;
+  filter: drop-shadow(0px 2px 12px #0066ff3d) !important;
+}
+
+.btn.btn-primary:hover {
+  background: linear-gradient(
+    180.19deg,
+    hsl(234, 100%, 49%) 0.18%,
+    #00b3ff 99.85%
+  ) !important;
+}
+
+.btn.btn-outline {
+  color: #0066ff !important;
+  border: 1px solid #0066ff;
+  box-shadow: 0px 0px 4px 2px #0066ff52 inset;
+  box-shadow: 0px 2px 6px 0px #0066ff3d;
+  white-space: nowrap;
+}
+
+.btn.btn-outline:hover {
+  color: #ffffff !important;
+  background-color: #0066ff !important;
+}
+
+.btn.btn-outline i {
+  transition: all 0.1s ease;
+  margin-left: 10px;
+}
+
+.btn.btn-outline:hover i {
+  transform: translateX(3px);
+}
+
+.btn.btn-plain {
+  font-weight: 600;
+  color: #0066ff !important;
+  background: #0066ff14 !important;
+  border-color: transparent !important;
+}
+
+.btn.btn-plain.sm-plain{
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+
+.btn-plain i {
+  transition: all 0.1s ease;
+}
+
+.btn-plain:hover i {
+  transform: translateX(3px);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.dot.sm-dot {
+  width: 4px;
+  height: 4px;
+}
+.v-line {
+  height: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.tag {
+  font-size: 13px;
+  font-weight: 400;
+  color: #4f4f4f;
+  padding: 4px 10px;
+  background-color: #9292921a;
+  border-radius: 100px;
+}
+
+.sm-tag {
+  color: #ffffff;
+  background-color: #929292;
+  margin-right: 6px;
+}
+
+.feedback-btn {
+  padding: 6px 10px;
+  color: #121212;
+  line-height: 14px;
+  border-radius: 1000px;
+  gap: 6px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.tags a {
+  color: #828282;
+  text-decoration: underline;
+  margin-right: 12px;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.show-react {
+  width: 186px !important;
+  visibility: visible !important;
+}
+
+.h-0 {
+  height: 0;
+  overflow-y: hidden;
+}
+
+.by-1 {
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+
+.bx-1 {
+  border-right: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+}
+
+.by-2 {
+  border-top: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+}
+
+.b-1 {
+  border: 1px solid #efefef;
+}
+
+.flag-wrapper {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+  display: flex;
+  overflow: hidden;
+}
+
+.text-primary {
+  color: #0066FF !important;
+}
+
+.text-secondary {
+  color: #828282 !important;
+}
+
+.text-dark {
+  color: #121212 !important;
+}
+
+.text-dark-grey {
+  color: #333333;
+}
+
+.text-blue {
+  color: #2f80ed;
+}
+
+.bg-green {
+  background-color: #00c113;
+}
+
+.gap-6{
+  gap: 12px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.answered {
+  border: 1px solid #00c113 !important;
+  background: #00cc141f !important;
+}
+
+.rank {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.rank.senior-level {
+  color: #2f80ed;
+}
+
+.rank.junior-level {
+  color: #00a045;
+}
+
+.rank.mid-level {
+  color: #e0a900;
+}
+
+.rank.intern {
+  color: #9b51e0;
+}
+
+.font-caveat {
+  font-family: "Caveat", cursive;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.nav-link {
+  font-family: "Inter", sans-serif;
+  color: #121212;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 12px !important;
+}
+
+/* ask question */
+.ask-question {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 12px 0px;
+  padding: 12px 16px;
+  border-radius: 12px;
+}
+.ask-question .info {
+  font-size: 14px;
+  color: rgb(188, 0, 219);
+  line-height: 18px;
+  width: fit-content;
+  border-top-right-radius: 12px;
+  padding: 8px 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(175, 4, 255, 0.2) 0%,
+    rgba(255, 88, 248, 0.2) 48%,
+    rgba(219, 0, 255, 0.2) 97.5%
+  );
+}
+
+
+@media screen and (max-width: 991.97px) {
+  .hero-section {
+    padding: 60px 0px 36px;
+  }
+  .py-42 {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 767.97px) {
+  .hero-section {
+    padding: 50px 0px 32px;
+  }
+  .py-42 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 575.97px) {
+  h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .hero-section {
+    padding: 50px 0px 28px;
+  }
+  .py-42 {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .tag {
+    font-size: 12px;
+}
+}

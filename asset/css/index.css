@@ -1,0 +1,79 @@
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1000px;
+  }
+}
+
+/* hero section start */
+
+.hero-section {
+  padding: 100px 0px 42px;
+}
+
+.hero-section .img-wrapper-left {
+    bottom: -77px;
+    left: -69px;
+    transform: rotate(15deg);
+}
+.hero-section .img-wrapper-right {
+    top: -101px;
+    right: -38px;
+    transform: rotate(-15deg);
+}
+/* hero section end */
+
+/* question section start */
+.answer-container{
+    padding: 12px 16px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 12px 0px;
+    cursor: pointer;
+}
+/* question section end */
+
+
+/* remote job section start */
+.remote-jobs-section .remote-job-card {
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #BDBDBD;
+    cursor: pointer;
+}
+/* remote job section end */
+
+
+/* hire developers section start */
+.hire-developers-section .hire-dev-card{
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #BDBDBD;
+  cursor: pointer;
+}
+/* hire developers section end */
+
+
+@media screen and (max-width: 520px) {
+    .info {
+      position: static !important;
+      border-radius: 12px;
+      margin: auto;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #ask-question {
+      margin: auto;
+      display: block;
+    }
+  }
+
+  
+
+  
