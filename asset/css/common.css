@@ -117,10 +117,16 @@ p {
   font-size: 12px;
   line-height: 14px;
   border-radius: 4px;
+  top: 10px;
+  right: 10px;
   color: #0066ff !important;
+  background-color: #f7f7f7;
   border: 1px solid #0066ff;
   box-shadow: 0px 0px 4px 2px #0066ff52 inset;
   box-shadow: 0px 2px 6px 0px #0066ff3d;
+  scale: 0;
+  opacity: 0;
+  transition: transform 0.2s ease opacity 0.1s ease;
 }
 
 .btn.btn-primary {

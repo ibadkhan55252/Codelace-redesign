@@ -30,6 +30,10 @@
   max-height: 500px;
 }
 
+.reply-section .code-box:hover .copy-btn {
+  scale: 1;
+  opacity: 1;
+}
 .reply-section .code-box::-webkit-scrollbar {
   width: 6px;
 }
@@ -179,7 +183,19 @@
   resize: none;
 }
 
+@media screen and (max-width: 1199px) {
+  .col{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
 @media screen and (max-width: 991.97px) {
+  .navbar-section .row {
+    border: 0;
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+  }
   .reply-section .row,
   .answer-section .row {
     grid-template-columns: 1fr;
