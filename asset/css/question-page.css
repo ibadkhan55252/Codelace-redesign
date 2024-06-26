@@ -11,7 +11,7 @@
 .reply-section .row,
 .answer-section .row {
   display: grid;
-  grid-template-columns: 1fr max(650px) 1fr;
+  grid-template-columns: 1fr minmax(0, 650px) 1fr;
 }
 
 .reply-section .menu-list li {
@@ -94,13 +94,14 @@
 }
 /* react btn end */
 
-.reply-section .card .card-footer {
+.reply-section .card .card-body {
   background-color: #0066ff14;
   border-radius: 6px;
 }
 
 .reply-section .card .icon-wrapper {
   width: 24px;
+  min-width: 24px;
   height: 24px;
   border-radius: 50%;
   background: linear-gradient(90deg, rgba(175, 4, 255, 0.2) 0%, rgba(255, 88, 248, 0.2) 48%, rgba(219, 0, 255, 0.2) 97.5%);
@@ -157,8 +158,6 @@
 
 
 
-
-
 /* answer-section start */
 .answer-section input {
   padding-left: 38px !important;
@@ -178,4 +177,54 @@
   border: 1px solid #bdbdbd;
   border-radius: 8px;
   resize: none;
+}
+
+@media screen and (max-width: 991.97px) {
+  .reply-section .row,
+  .answer-section .row {
+    grid-template-columns: 1fr;
+    border-right: 1px solid #efefef !important;
+    border-left: 1px solid #efefef !important;
+  } 
+
+  .col {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .col-second {
+    border: 0;
+  }
+  .menu-list {
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+  .menu-list li {
+    white-space: nowrap;
+  }
+
+  .reply-section .code-box::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .reply-section .card .card-body{
+    gap: 10px;
+  }
+  .reply-section .card .icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  .reply-section .card .card-body .top-row {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .reply-section .card .card-body .mid-row {
+  justify-content: center;
+  }
+  .reply-section .card .card-body .bottom-row {
+    justify-content: center !important;
+    width: 100%;
+  }
 }
